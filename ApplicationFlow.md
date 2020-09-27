@@ -1,12 +1,12 @@
-* User Sign In**
+* User Sign In
     * User clicks login button on landing page.
     * User enters username and password on form and submits.
     * If user is authenticated, home page appears according to user rank (private, lieutenant or captain) 
     * If authentication fails, show generic error, never saying if the username or the password was wrong.
     * Multiple failures will disconnect user and prevent farther tries from the same IP.
-* View individual data as private**
+* View individual data as private
     * Automatic.  Data appears on personal home page.  There is no interaction except to log out.
-* View individual data as a lieutenant or captain**
+* View individual data as a lieutenant or captain
     * User clicks view personal data button
     * Page sends a request to individual data servlet
     * Servlet uses user data dao to pull data for the officer who is logged in.
@@ -14,14 +14,14 @@
     * Servlet sends data to jsp.
     * Officer's jsp displays the reports.
     * Throw exception if there is more than one result - this should never happen.
-* View Platoon (as lieutenant) or Company (as captain)**
+* View Platoon (as lieutenant) or Company (as captain)
     * Page sends a request with name and rank of requesting officer.
     * Servlet uses the dao to select soldiers in that lieutenant's platoon, or the entire company if a captain makes the request.
     * Dao performs select and list from results.
     * Dao returns list matching criteria to servlet.
     * Servlet sends list back to officer's jsp.
     * Officer's jsp displays the soldiers.
-* Add Duty to Soldier's data**
+* Add Duty to Soldier's data
     * Option only available to officers
     * User selects soldier to perform duty
     * User selects duty from drop-down
