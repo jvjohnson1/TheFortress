@@ -8,7 +8,7 @@ timeline.
 between when Enterprise Java came up in blackboard and last night, inclusive.
 I'll keep better track of time after this.
 * Week 3
-    * Actually worked vary stead this week, about 90 minutes a day, although I didn't log
+    * Actually worked vary steady this week, about 90 minutes a day, although I didn't log
 details day by day.  I'm spending a lot of time researching how to make encryption
 work in a real-world application, and sometimes I think I know too much about the 
 encryption standards and not enough about how to make it happen.
