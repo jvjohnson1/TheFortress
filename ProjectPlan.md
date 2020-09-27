@@ -1,10 +1,10 @@
-**Starting in Week 4,** 
-    *Complete documentation, have it approved - Checkpoint 1
-*Week Five
-    *Database up, with encryption.
-*Week Six
-    *Login working with authentication
-    *Basic feature to detect automated dictionary and brute force attacks
+* ** Starting in Week 4 ** 1
+    * Complete documentation, have it approved - Checkpoint 1
+* Week Five 1
+    * Database up, with encryption 1a 
+* Week Six 1
+    * Login working with authentication 1a
+    * Basic feature to detect automated dictionary and brute force attacks 1a
 *Week 7
     *Unit testing and logging up - Checkpoint 2
     *Professional Development Demo is this week, this requires
