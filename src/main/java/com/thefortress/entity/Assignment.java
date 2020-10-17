@@ -1,3 +1,5 @@
+package com.thefortress.entity;
+
 public class Assignment {
     private int soldierID;
     private int dutyID;

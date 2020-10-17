@@ -1,3 +1,5 @@
+package com.thefortress.entity;
+
 public class Duty {
     private String dutyTitle;
     private int dutyID;

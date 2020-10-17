@@ -21,19 +21,19 @@
     * Dao returns list matching criteria to servlet.
     * Servlet sends list back to officer's jsp.
     * Officer's jsp displays the soldiers.
-* Add Duty to Soldier's data
+* Add com.thefortress.entity.Duty to com.thefortress.entity.Soldier's data
     * Option only available to officers
     * User selects soldier to perform duty
     * User selects duty from drop-down
         * (If logged in as a captian, there will be the option to enter a new duty)
-    * Details are sent to Assign Duty servlet
+    * Details are sent to Assign com.thefortress.entity.Duty servlet
     * Servlet creates new duty object
     * Servlet sends object to dao
     * Dao adds duty to soldier's personal data
-* Remove duty from Soldier's data
+* Remove duty from com.thefortress.entity.Soldier's data
     * Option only available to officers
     * User selects soldier and duty 
-    * Details are sent to Remove Duty servlet
+    * Details are sent to Remove com.thefortress.entity.Duty servlet
     * Servlet creates a RemoveDuty object
     * Servlet sends object to dao
     * Dao removes duty duty soldier's personal data
