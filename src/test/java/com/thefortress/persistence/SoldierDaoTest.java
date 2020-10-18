@@ -47,17 +47,7 @@ class SoldierDaoTest {
         assertEquals("Private", testSoldier.getRank());
         assertEquals(2, testSoldier.getPlatoonNumber());
     }
-//
-//
-//
-//    /**
-//     * Tests method getById with injection string
-//     */
-//    @Test
-//    void firstAttack() {
-//        Soldier testSoldier = dao.getById(64822 + "OR 1 = 1;");
-//
-//    }
+
 
     /**
      * Tests method saveOrUpdate
@@ -71,19 +61,19 @@ class SoldierDaoTest {
         Soldier checker = dao.getById(93450);
         assertEquals("Jackson", checker.getLastName());
     }
-//    /**
-//     * Tests method insert
-//     */
-//    @Test
-//    void insert() {
-//
-//        myTest = new Book("Harvey Deitel", "JavaScript for Programmers", "12345-234567", 2010);
-//        int id = dao.insert(myTest);
-//        assertNotEquals(0,id);
-//        Book inserted = dao.getById(id);
-//        assertTrue(myTest.equals(inserted));
-//
-//    }
+    /**
+     * Tests method insert
+     */
+    @Test
+    void insert() {
+
+        myTest = new Soldier("Stephan", "Watson", "swatson", "Private",55328, 2);
+        int id = dao.insert(myTest);
+        assertNotEquals(0,id);
+        Soldier inserted = dao.getById(id);
+        assertTrue(myTest.equals(inserted));
+
+    }
 //
 //    /**
 //     * Tests method delete

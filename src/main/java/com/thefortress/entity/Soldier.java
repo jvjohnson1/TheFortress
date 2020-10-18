@@ -19,6 +19,15 @@ public class Soldier {
 
     }
 
+    public Soldier(String first, String last, String user, String rank, int id, int platoon) {
+        this.setFirstName(first);
+        this.setLastName(last);
+        this.setUserName(user);
+        this.setSoldierID(id);
+        this.setRank(rank);
+        this.setPlatoonNumber(platoon);
+    }
+
     public String getFirstName() {
         return firstName;
     }
