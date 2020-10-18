@@ -26,11 +26,11 @@ class SoldierDaoTest {
     /**
      * Set up consistent database before each test
      */
-    //    @BeforeEach
+    @BeforeEach
     void setUp() {
         dao = new SoldierDao();
-//        edu.matc.persistence.Database database = edu.matc.persistence.Database.getInstance();
-        Database database = Database.getInstance();
+        com.thefortress.persistence.Database database = com.thefortress.persistence.Database.getInstance();
+        //Database mydatabase = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
 
