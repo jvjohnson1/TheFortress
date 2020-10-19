@@ -30,7 +30,6 @@ class SoldierDaoTest {
     void setUp() {
         dao = new SoldierDao();
         com.thefortress.persistence.Database database = com.thefortress.persistence.Database.getInstance();
-        //Database mydatabase = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
 
@@ -44,7 +43,7 @@ class SoldierDaoTest {
         assertEquals("Allen", testSoldier.getFirstName());
         assertEquals("Turner", testSoldier.getLastName());
         assertEquals("aturner", testSoldier.getUserName());
-        assertEquals("Private", testSoldier.getRank());
+        assertEquals("Private", testSoldier.getSoldierRank());
         assertEquals(2, testSoldier.getPlatoonNumber());
     }
 
@@ -74,15 +73,15 @@ class SoldierDaoTest {
         assertTrue(myTest.equals(inserted));
 
     }
-//
-//    /**
-//     * Tests method delete
-//     */
-//    @Test
-//    void delete() {
-//        dao.delete(dao.getById(1));
-//        assertNull(dao.getById(1));
-//    }
+
+    /**
+     * Tests method delete
+     */
+    @Test
+    void delete() {
+        dao.delete(dao.getById(93450));
+        assertNull(dao.getById(93450));
+    }
 
     /**
      * Tests method getAll

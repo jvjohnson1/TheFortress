@@ -1127,7 +1127,7 @@
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="279" name="rank">
+    <column id="283" parent="279" name="soldierRank">
       <Position>4</Position>
       <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>

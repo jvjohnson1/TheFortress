@@ -1,6 +1,7 @@
 package com.thefortress.entity;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 
 @Entity (name = "Soldier")
@@ -9,7 +10,7 @@ public class Soldier {
     private String firstName;
     private String lastName;
     private String userName;
-    private String rank;
+    private String soldierRank;
     private int platoonNumber;
 
     @Id
@@ -24,7 +25,7 @@ public class Soldier {
         this.setLastName(last);
         this.setUserName(user);
         this.setSoldierID(id);
-        this.setRank(rank);
+        this.setSoldierRank(rank);
         this.setPlatoonNumber(platoon);
     }
 
@@ -52,12 +53,12 @@ public class Soldier {
         this.userName = userName;
     }
 
-    public String getRank() {
-        return rank;
+    public String getSoldierRank() {
+        return soldierRank;
     }
 
-    public void setRank(String rank) {
-        this.rank = rank;
+    public void setSoldierRank(String rank) {
+        this.soldierRank = rank;
     }
 
     public int getPlatoonNumber() {
@@ -74,5 +75,35 @@ public class Soldier {
 
     public void setSoldierID(int soldierID) {
         this.soldierID = soldierID;
+    }
+
+    @Override
+    public String toString() {
+        return "Soldier{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", soldierRank='" + soldierRank + '\'' +
+                ", platoonNumber=" + platoonNumber +
+                ", soldierID=" + soldierID +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Soldier)) return false;
+        Soldier soldier = (Soldier) o;
+        return platoonNumber == soldier.platoonNumber &&
+                soldierID == soldier.soldierID &&
+                Objects.equals(firstName, soldier.firstName) &&
+                Objects.equals(lastName, soldier.lastName) &&
+                Objects.equals(userName, soldier.userName) &&
+                Objects.equals(soldierRank, soldier.soldierRank);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, userName, soldierRank, platoonNumber, soldierID);
     }
 }

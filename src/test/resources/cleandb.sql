@@ -26,7 +26,7 @@ CREATE TABLE `Soldier` (
   `firstName` varchar(30) DEFAULT NULL,
   `lastName` varchar(30) DEFAULT NULL,
   `userName` varchar(30) DEFAULT NULL,
-  `rank` varchar(15) DEFAULT NULL,
+  `soldierRank` varchar(15) DEFAULT NULL,
   `soldierID` int(11) NOT NULL,
   `platoonNumber` int(11) DEFAULT NULL,
   PRIMARY KEY (`soldierID`),
