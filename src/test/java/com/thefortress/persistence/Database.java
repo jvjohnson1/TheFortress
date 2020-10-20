@@ -2,7 +2,6 @@ package com.thefortress.persistence;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import static org.junit.jupiter.api.Assertions.*;
 
 
 import java.io.BufferedReader;

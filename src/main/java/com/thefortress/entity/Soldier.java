@@ -6,6 +6,9 @@ import java.util.Objects;
 
 @Entity (name = "Soldier")
 @Table (name = "Soldier")
+/**
+ * Defines Soldier class, the most basic data used
+ */
 public class Soldier {
     private String firstName;
     private String lastName;
@@ -29,54 +32,106 @@ public class Soldier {
         this.setPlatoonNumber(platoon);
     }
 
+    /**
+     * Standard get method for first name
+     * @return firstName
+     */
     public String getFirstName() {
         return firstName;
     }
 
+    /**
+     * Standard set method for first name
+     * @param firstName
+     */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    /**
+     * Standard get method for last name
+     * @return lastName
+     */
     public String getLastName() {
         return lastName;
     }
 
+    /**
+     * Standard set method for last name
+     * @param lastName
+     */
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     * Standard get method for user name
+     * @return userName
+     */
     public String getUserName() {
         return userName;
     }
 
+    /**
+     * Standard set method for user name
+     * @param userName
+     */
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
+    /**
+     * Standard get method for a soldier's rank
+     * @return soldierRank
+     */
     public String getSoldierRank() {
         return soldierRank;
     }
 
+    /**
+     * Standard set method for soldierRank
+     * @param rank
+     */
     public void setSoldierRank(String rank) {
         this.soldierRank = rank;
     }
 
+    /**
+     * Standard get method for platoonNumber
+     * @return platoonNumber
+     */
     public int getPlatoonNumber() {
         return platoonNumber;
     }
 
+    /**
+     * Standard set method for platoon number
+     * @param platoonNumber
+     */
     public void setPlatoonNumber(int platoonNumber) {
         this.platoonNumber = platoonNumber;
     }
 
+    /**
+     * Standard get method for a soldier's ID
+     * @return
+     */
     public int getSoldierID() {
         return soldierID;
     }
 
+    /**
+     * Standard set method for a soldier's ID
+     * @param soldierID
+     */
     public void setSoldierID(int soldierID) {
         this.soldierID = soldierID;
     }
 
+    /**
+     * Customized toString method
+     * @return Soldier class in string format
+     */
     @Override
     public String toString() {
         return "Soldier{" +
@@ -89,6 +144,11 @@ public class Soldier {
                 '}';
     }
 
+    /**
+     * Compares two soldier objects based on equalivent values
+     * @param o
+     * @return
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -102,6 +162,10 @@ public class Soldier {
                 Objects.equals(soldierRank, soldier.soldierRank);
     }
 
+    /**
+     * Converts Soldier object to hash code
+     * @return hash
+     */
     @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName, userName, soldierRank, platoonNumber, soldierID);

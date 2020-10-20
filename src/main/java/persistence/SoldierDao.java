@@ -23,7 +23,7 @@ public class SoldierDao {
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
-     * Get book by id
+     * Get Soldier
      * @param id
      */
     public Soldier getById(int id) {
@@ -35,7 +35,7 @@ public class SoldierDao {
     }
 
     /**
-     * update Book
+     * update Soldier
      * @param aSoldier Person to be inserted or updated
      */
     public void saveOrUpdate(Soldier aSoldier) {
@@ -47,7 +47,7 @@ public class SoldierDao {
     }
 
     /**
-     * insert Book
+     * insert a Soldier
      * @param aSoldier Person to be inserted
      */
     public int insert(Soldier aSoldier) {
@@ -61,9 +61,10 @@ public class SoldierDao {
     }
 
     /**
-     * Delete a book
+     * Delete a Soldier
      * @param aSoldier person to be deleted
      * Not sure how this will work with separation of duties
+     * This version is a placeholder to meet Checkpoint 2 requirements
      */
     public void delete(Soldier aSoldier) {
         Session session = sessionFactory.openSession();
@@ -74,9 +75,9 @@ public class SoldierDao {
     }
 
 
-    /** Return a list of all books
+    /** Return a list of all Soldiers
      *
-     * @return All books
+     * @return List
      */
     public List<Soldier> getAll() {
 
@@ -93,7 +94,4 @@ public class SoldierDao {
 
         return troops;
     }
-
-
-
 }

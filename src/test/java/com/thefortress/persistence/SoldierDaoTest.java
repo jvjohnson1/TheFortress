@@ -60,6 +60,7 @@ class SoldierDaoTest {
         Soldier checker = dao.getById(93450);
         assertEquals("Jackson", checker.getLastName());
     }
+
     /**
      * Tests method insert
      */
