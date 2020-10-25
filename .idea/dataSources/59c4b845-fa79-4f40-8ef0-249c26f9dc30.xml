@@ -1111,49 +1111,96 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="279" parent="2" name="Soldier"/>
-    <column id="280" parent="279" name="firstName">
+    <table id="279" parent="2" name="Officer"/>
+    <table id="280" parent="2" name="Platoon"/>
+    <table id="281" parent="2" name="Soldier"/>
+    <column id="282" parent="279" name="firstName">
+      <Position>1</Position>
+      <DataType>mediumtext|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="283" parent="279" name="lastName">
+      <Position>2</Position>
+      <DataType>mediumtext|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="284" parent="279" name="userName">
+      <Position>3</Position>
+      <DataType>mediumtext|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="285" parent="279" name="soldierRank">
+      <Position>4</Position>
+      <DataType>mediumtext|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="286" parent="279" name="soldierID">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="279" name="platoonNumber">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="288" parent="279" name="column_7">
+      <Position>7</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="289" parent="280" name="platoonNumber">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="280" name="commandingOfficer">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="291" parent="281" name="firstName">
       <Position>1</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="279" name="lastName">
+    <column id="292" parent="281" name="lastName">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="279" name="userName">
+    <column id="293" parent="281" name="userName">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="279" name="soldierRank">
+    <column id="294" parent="281" name="soldierRank">
       <Position>4</Position>
       <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="279" name="soldierID">
+    <column id="295" parent="281" name="soldierID">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="279" name="platoonNumber">
+    <column id="296" parent="281" name="platoonNumber">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="286" parent="279" name="Soldier_soldierID_uindex">
+    <index id="297" parent="281" name="Soldier_soldierID_uindex">
       <ColNames>soldierID</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="287" parent="279" name="PRIMARY">
+    <key id="298" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>soldierID</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="288" parent="279" name="Soldier_soldierID_uindex">
+    <key id="299" parent="281" name="Soldier_soldierID_uindex">
       <ColNames>soldierID</ColNames>
       <UnderlyingIndexName>Soldier_soldierID_uindex</UnderlyingIndexName>
     </key>
