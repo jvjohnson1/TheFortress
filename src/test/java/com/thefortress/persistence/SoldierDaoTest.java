@@ -90,6 +90,6 @@ class SoldierDaoTest {
     @Test
     void getAll() {
         List<Soldier> users = dao.getAll();
-        assertEquals(16, users.size());
+        assertEquals(15, users.size());
     }
 }
