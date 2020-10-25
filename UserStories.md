@@ -1,28 +1,28 @@
 * Overt actions (which should work with the required rank).
     * As a private, I need to:
         * View my assigned duties
-        * View my personal data
+        * View my personal data*
         * View issued equipment
         * Report equipment missing or damaged
         * Report duties complete 
     * As a Lieutenant, I need to: 
-        * View entire platoon
-        * Search for a private by ID
-            * Should not display a soldier in another platoon!
+        * View entire platoon*
+        * Search for a private by ID*
+            * Should not display a soldier in another platoon!*
         * Assign duties to privates
         * Remove duties from privates
-        * Update personal data
+        * Update personal data for any member of platoon, self included*
         * Check out equipment
         * Check back equipment
         * Confirm duties complete
     * As a Captain, I need to: 
-        * View entire company
-        * View selected platoon
-        * Search for a private by ID in any platoon
+        * View entire company*
+        * View selected platoon*
+        * Search for a private by ID in any platoon*
         * Assign duties to platoons
         * Remove duties from platoons
         * Define new duties (lieutenants can't do this)
-        * Add soldiers (users)
+        * Add soldiers (users)*
     * As a Captain and a Lieutenant in agreement, we may need to remove a solder         
 * Misuse Cases
     * As a hacker, I will launch a dictionary attack against passwords
